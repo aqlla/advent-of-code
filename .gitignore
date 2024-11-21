@@ -12,3 +12,13 @@ pom.xml.asc
 .lein-failures
 .nrepl-port
 .cpcache/
+
+*.o
+*.hi
+*.exe
+
+.vscode/
+day-*/day*
+!day-*/day*.hs
+
+.DS_Store
