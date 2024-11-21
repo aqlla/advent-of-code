@@ -7,7 +7,9 @@
 
 ## Usage
 ### Project Setup
+
 _Coming Soon_
+- Use [VS Code Plugin](https://marketplace.visualstudio.com/items?itemName=haskell.haskell) for a surprisingly quick & easy Haskell dev environment setup.
 
 ### Run the code
 ```bash
@@ -23,9 +25,4 @@ _Coming Soon_
 ```
 
 ## Resources
-### Haskell
 - [Haskell online Playground](https://play.haskell.org/)
-- Use [VS Code Plugin](https://marketplace.visualstudio.com/items?itemName=haskell.haskell) for a surprisingly quick & easy Haskell dev environment setup.
-
-### Clojure
-_Coming Soon_
