@@ -1,3 +1,4 @@
 ## Yearly holiday-adjacent daily coding challenge
 
-Clojure, Haskell, and C?
+- 2023 - Haskell (DNF)
+- 2024 - Haskell, Clojure, C? Python?
