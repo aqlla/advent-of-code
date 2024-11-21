@@ -16,8 +16,6 @@ Might also try some in rust once Haskell starts feeling intuitive.
 
 I can assure you this is approximately correct, or was a couple commits ago.
 
-#### Day 1
-
 ```
 # compile 
 ghc src/day1.hs
