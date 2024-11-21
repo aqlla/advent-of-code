@@ -1,3 +1,3 @@
-## Holiday-adjacent daily coding challenge 2024
+## Yearly holiday-adjacent daily coding challenge
 
 Clojure, Haskell, and C?
