@@ -11,6 +11,7 @@
     <Content Include="2024\day-01\f\input\part1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="2024\day-01\README.md" />
   </ItemGroup>
 
 </Project>
