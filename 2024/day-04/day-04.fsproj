@@ -9,7 +9,9 @@
 
   <ItemGroup>
     <Compile Include="run.fs" />
-    <Compile Include="input/*" />
+    <Content Include="input\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
