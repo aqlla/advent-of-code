@@ -15,7 +15,8 @@ let isSafe xs =
             Seq.forall ((*) (signOf a) >> andf ((<) 0) ((>) 4)) rest
         | _ -> false
     
-let isSafeDamp xs = function
+let isSafeDamp xs =
+    match xs with
     | _ when isSafe xs -> true
     | _ ->
        xs
