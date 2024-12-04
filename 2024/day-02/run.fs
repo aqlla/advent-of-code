@@ -19,9 +19,10 @@ let isSafeDamp xs =
     match xs with
     | _ when isSafe xs -> true
     | _ ->
+       let rmAt i = xs |> Seq.removeAt i
        xs
-       |> Seq.mapi (fun i _ -> i)
-       |> Seq.exists (fun i -> xs |> Seq.removeAt i |> isSafe)
+       |> Seq.indexed
+       |> Seq.exists (fst >> rmAt >> isSafe)
 
     
 System.IO.File.ReadLines("input/input.txt")
