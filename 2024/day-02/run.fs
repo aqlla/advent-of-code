@@ -24,7 +24,6 @@ let isSafeDamp xs =
        |> Seq.indexed
        |> Seq.exists (fst >> rmAt >> isSafe)
 
-    
 System.IO.File.ReadLines("input/input.txt")
 |> Seq.map (_.Split(" ") >> Seq.map int)
 |> Seq.sumBy (isSafeDamp >> Convert.ToInt16)
