@@ -13,9 +13,7 @@ let p2Adjustments lines =
 
 System.IO.File.ReadLines("input/input.txt")
 |> p2Adjustments
-|> Seq.collect (
-    matches "mul\(\d+,\d+\)"
-)
+|> Seq.collect (matches "mul\(\d+,\d+\)")
 |> Seq.map (
     matches "\d+" >> Seq.map int >> Seq.fold (*) 1
 )
