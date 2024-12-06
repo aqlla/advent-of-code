@@ -43,15 +43,16 @@ let countXmas (mat: 'a[,]) =
     |> matches "XMAS"
 
 let isXMas (mat: char[,]) y x = function
-    | 'A' when x > 0 && x < Array2D.length2 mat - 1 &&
-               y > 0 && y < Array2D.length1 mat - 1 &&
-               (
-                   mat[y - 1, x - 1] = 'M' && mat[y + 1, x + 1] = 'S' ||
-                   mat[y - 1, x - 1] = 'S' && mat[y + 1, x + 1] = 'M'
-               ) && (
-                   mat[y + 1, x - 1] = 'S' && mat[y - 1, x + 1] = 'M' ||
-                   mat[y + 1, x - 1] = 'M' && mat[y - 1, x + 1] = 'S'
-               ) -> true
+    | 'A' when
+       x > 0 && x < Array2D.length2 mat - 1 &&
+       y > 0 && y < Array2D.length1 mat - 1 &&
+       (
+           mat[y - 1, x - 1] = 'M' && mat[y + 1, x + 1] = 'S' ||
+           mat[y - 1, x - 1] = 'S' && mat[y + 1, x + 1] = 'M'
+       ) && (
+           mat[y + 1, x - 1] = 'S' && mat[y - 1, x + 1] = 'M' ||
+           mat[y + 1, x - 1] = 'M' && mat[y - 1, x + 1] = 'S'
+       ) -> true
     | _ -> false
     
 let flatten mat =
