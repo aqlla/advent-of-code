@@ -8,8 +8,7 @@ let p2Adjustments lines =
     lines
     |> Seq.fold (+) ""
     |> _.Split("do()")
-    |> Seq.map (_.Split("don't()", 2) >> Seq.head)
-
+    |> Seq.map (_.Split("don't()") >> Seq.head)
 
 System.IO.File.ReadLines("input/input.txt")
 |> p2Adjustments
